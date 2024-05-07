@@ -17,7 +17,7 @@ resource "aws_vpc" "hashicat" {
 
   tags = {
     name = "${var.prefix}-vpc-${var.region}"
-    name = "${var.environment}"
+    environment = "${var.environment}"
   }
 }
 
@@ -128,8 +128,8 @@ resource "aws_instance" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-hashicat-instance"
-    name = "${var.department}"
-    name = "${var.billable}"
+    Department = "${var.department}"
+    Billable = "${var.billable}"
   }
 }
 
