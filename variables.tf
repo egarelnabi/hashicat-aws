@@ -53,3 +53,8 @@ variable "environment" {
   default    = "Production"
   description = "target environment"
 }
+
+variable "department" {
+  default    = "devops"
+  description = "department"
+}
