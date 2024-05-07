@@ -17,7 +17,7 @@ resource "aws_vpc" "hashicat" {
 
   tags = {
     name = "${var.prefix}-vpc-${var.region}"
-    name = ${var.environment}
+    name = "${var.environment}"
   }
 }
 
