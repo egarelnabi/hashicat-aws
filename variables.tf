@@ -58,3 +58,9 @@ variable "department" {
   default    = "devops"
   description = "department"
 }
+
+variable "billable" {
+  default    = "true"
+  description = "are this billable resources"
+}
+
